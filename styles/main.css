@@ -1,0 +1,111 @@
+@CHARSET "UTF-8";
+
+body {
+  font-size: 40px;	
+}
+
+h1, h2, h3 {
+  text-align: center;	
+}
+
+.background {
+  background-color: #E3F0F5;	
+}
+
+#game {
+  font-family: PressStart2PRegular;	
+}
+
+#splash-screen, #menu-screen {
+  padding-top: 2em;	
+}
+
+#splash-screen .title, #menu-screen .title {
+  font-family: PortLligatSansRegular;
+  color: #4B58A0;
+  font-size: 1.5em;
+  line-height: 0.9em;
+  margin: 0;
+  text-align: center;
+}
+
+#splash-screen .continue, #menu-screen .continue {
+  color: #4A889F;
+  font-size: 0.75em;
+  line-height: 5em;
+  margin: 0;
+  text-align: center;
+}
+
+#splash-screen .continue:hover, #menu-screen h3.continue:hover {
+  color: #4AA16B;
+  cursor: pointer;
+}
+
+#menu-screen, #game-screen, #menu-screen h3.continue,
+#game-screen #p2-prompt {
+  display: none;	
+}
+
+#menu-screen span.red {
+  width: 5%;
+  margin: 0 0 0 40%;
+}
+
+#menu-screen span.yellow {
+  width: 5%;
+  margin: 0 40% 0 0;
+}
+
+#menu-screen #player-colors {
+  display: none;
+  max-width: 60%;
+  padding: 0.5em;
+  margin: 2em auto;	
+}
+
+#menu-screen span canvas, #menu-screen #player-colors {
+  background-color: #AFBAB3;	
+}
+
+#red, .red {
+  color: red;	
+}
+
+#yellow, .yellow {
+  color: yellow;	
+}
+
+#game-screen h2 {
+  background-color: #AFBAB3;
+  font-size: 0.75em;
+  line-height: 2.5em;
+  margin: 0 0 1em 0;
+  text-align: center;
+  padding: 0;
+}
+
+#game-screen #game-board {
+  width: 13.7em;
+  height: 12em;
+  background-color: #ECF6FA;
+  margin: auto;
+  border-style: solid;
+  border-color: #AEB5B8;
+  border-width: 0.05em;
+}
+
+#game-screen #game-board div[id^='row'] {
+  width: 100%;
+  height: 2em;
+  margin: auto;
+}
+
+#game-screen #game-board div[id^='row'] span[id^='rowCol'] canvas {
+  width: 1.9em;
+  height: 1.9em;
+  border-style: solid;
+  border-color: #AEB5B8;
+  border-width: 0.05em;
+  margin: auto;
+}
